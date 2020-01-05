@@ -1,0 +1,116 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <title>Web Portfolio</title>
+    <title>Document</title>
+    <style>
+        header {
+            background: url(images/dark.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 800px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-wrapper transparent">
+            <div class="container">
+                <a href="#" class="brand-logo">Web Design</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Movie cards</a></li>
+                </ul>
+                <ul class="sidenav grey lighten-2" id="mobile-menu">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Movie cards</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- React js code-->
+        <div class="card horizontal s4">
+            <div className="card-image">
+                <img src={avengers} className='responsive-img' style={style2}></img>
+                <span className="card-title"> Avengers</span>
+            </div>
+            <div class="card-stacked">
+                <div class="card-content">
+                    <p>Earth's mightiest heroes must come together and learn to fight as a team if they are going to
+                        stop the mischievous Loki and his alien army from enslaving humanity.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">This is a link</a>
+                </div>
+            </div>
+        </div>
+        <div class="card horizontal s4">
+            <div className="card-image">
+                <img src={avengersi} className='responsive-img' style={style2}></img>
+                <span className="card-title">Avengers Infinity</span>
+            </div>
+            <div class="card-stacked">
+                <div class="card-content">
+                    <p>The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the
+                        powerful Thanos before his blitz of devastation and ruin puts an end to the universe.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">This is a link</a>
+                </div>
+            </div>
+        </div>
+        <div class="card horizontal s4">
+            <div className="card-image">
+                <img src={avengerse} className='responsive-img' style={style2}></img>
+                <span className="card-title">Avenger Endgame</span>
+            </div>
+            <div class="card-stacked">
+                <div class="card-content">
+                    <p>After the devastating events of Avengers: Infinity War, the universe is in ruins. With the help
+                        of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and
+                        restore balance to the universe.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a href="#">This is a link</a>
+                </div>
+            </div>
+        </div>
+        <!-- Reatjs code-->
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <div class="card-panel s3"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+    </script>
+</body>
+
+</html>
